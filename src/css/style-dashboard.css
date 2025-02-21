@@ -1,0 +1,234 @@
+.cabecalho {
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex: 1 1 100vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    border-bottom: 1px solid rgb(26, 25, 25);
+}
+
+.cabecalho .logo {
+    display: flex;
+    gap: 30px;
+    height: 55px;
+}
+
+.home {
+    display: flex;
+    position: relative;
+    min-height: calc(100vh - 80px);
+    overflow: hidden;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 1;
+}
+
+
+
+.home::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .7) 80%, transparent 100%);
+}
+
+.home .fundo {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+
+.home .painel {
+    display: flex;
+    margin: 1pc;
+    margin-left: 2pc;
+    width: 40pc;
+    height: 30px;
+    font-family: 'Codygoon';
+    border: solid 2px #fff;
+    border-radius: 5px;
+    background: rgba(108, 116, 255, 0.604);
+    position: absolute;
+    z-index: 1;
+    min-height: calc(80vh - 45px);
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 5px 10px 5px;
+    max-width: 750px;
+}
+
+.home .painel .titulo {
+    align-self: center;
+    text-align: center;
+    color: #fff;
+    margin-left: 2pc;
+    margin-top: 2pc;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.home .painel .lista {
+    margin-top: -1pc;
+}
+
+.home .painel .lista button {
+    border-radius: 10px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    background: #ffffff2b;
+    border: none;
+}
+
+.home .painel .lista button:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.381);
+    transition:  0.5s;    transform: translateY(-5px);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.home .painel .lista button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.home .painel li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*solicitação*/
+.home .perfil {
+    display: grid;
+    margin: 1pc;
+    margin-left: 55%;
+    width: 40pc;
+    height: 30px;
+    font-family: 'Codygoon';
+    border: solid 2px #fff;
+    border-radius: 5px;
+    background: rgba(108, 116, 255, 0.604);
+    position: relative;
+    z-index: 1;
+    min-height: calc(80vh - 45px);
+    gap: 10pc;
+    padding: 30px;
+    max-width: 750px;
+}
+
+.home .perfil .area-foto {
+    display: flex;
+    position: relative;
+    background-color: black;
+    width: 12pc;
+    height: 12pc;
+    overflow: hidden;
+    border-radius: 100%;
+    border: solid black 1pc;
+    justify-self: center;
+
+}
+
+.home .perfil .area-foto .foto {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.home .perfil .info {
+    display: grid;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+}
+
+.home .perfil .info ul {
+    gap: 9px;
+}
+
+.home .perfil .info .bem-vindo {
+    margin-top: -9pc;
+    color: #fff;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: 3pc;
+}
+
+.home .perfil .info .nome {
+    font-size: 2.6pc;
+    margin-top: -6pc;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+
+}
+.home .perfil .info button{
+    display: flex;
+    width: 250px;
+    height: 40px;
+   }
+
+.home .perfil .info .editar{
+    width: 200px;
+    height: 30px;
+    margin: -2px 0px 5px 0px;
+    margin-left: 10px;
+    padding: 3px 2px 3px 2px;
+    float: right;
+    font-size: 14px;
+    color: black;
+}
+
+
+.home .perfil .info .user {
+    width: 250px;
+    font-size: 14px;
+    padding: auto;
+    color: #fff !important;
+
+}
+
+
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.modal-content button {
+    margin: 10px;
+}

@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+html{
+   font-size: 72.5%;
+   overflow-x: hidden;
+}
+
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; 
+   padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   text-transform: capitalize;
+}
+
+section{
+   padding:2rem;
+}
+
+
+.message{
+   background-color: rgb(54, 112, 200);
+   position: sticky;
+   top:0; left:0;
+   z-index: 10000;
+   border-radius: .5rem;
+   background-color:#fff;
+   padding:1.5rem 2rem;
+   margin:0 auto;
+   max-width: 1200px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap:1.5rem;
+}
+
+.message span{
+   font-size: 2rem;
+   color:#333;
+}
+
+.message i{
+   font-size: 2.5rem;
+   color:#333;
+   cursor: pointer;
+}
+
+.message i:hover{
+   color:tomato;
+}
+
+.cabecalho {
+   height: 80px;
+   background-color: rgb(0, 0, 0);
+   display: flex;
+   flex: 1 1 100vw;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 30px;
+   border-bottom: 1px solid rgb(26, 25, 25);
+}
+
+.cabecalho .logo {
+   display: flex;
+   margin-left: 10px;
+   gap: 30px;
+   height: 55px;
+}
+
+.cabecalho .menu {
+   display: flex;
+   flex: 1 1 200px;
+   align-items: center;
+   justify-content: flex-end;
+}
+
+
+.cabecalho .menu li a {
+   padding: 20px;
+   text-decoration: none;
+   color: #e8e8e8;
+   font-weight: bolder;
+   font-size: 15px;
+   font-family: 'Codygoon';
+}
+
+
+.cabecalho .menu a:hover {
+   border-bottom: 2px solid white;
+
+}
+
+.container{
+   max-width: 1200px;
+   margin:0 auto;
+   /* padding-bottom: 5rem; */
+}
+
+.home {
+   display: flex;
+   position: relative;
+   overflow: hidden;
+   margin-top: 5px;
+   background-image: url(../imagem/Fundo/fundo-estoque.jpg);
+   border: 1px solid #fff;
+   background-size: cover;
+}
+
+.home::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   opacity: 1;
+   z-index: 1;
+}
+
+
+.home::after {
+   content: '';
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   background: linear-gradient(40deg, rgba(0, 0, 0, 0.275), rgba(0, 0, 0, 0.275) 100%, transparent 100%);
+}
+
+.home .imagem-fundo {
+   width: 100%;
+   object-fit: cover;
+}
+
+.home .btn {
+   justify-content: center;
+   background-color: #0a8fe8;
+   color: #fff;
+}
+
+.home .btn:hover {
+   justify-content: center;
+   background-color: #00253eda;
+   color: #fff;
+}
+
+.option a{ 
+   font-size: 79%;
+   width: auto;
+   border-radius: 20px;
+}
+
+.option #delete{ 
+   display: flex;
+   font-size: 80%;
+   width: 100px;
+   height: auto;
+   margin-bottom: 10px;
+   padding: 5px;
+   border-radius: 20px;
+}
+
+ td {
+   color: #fff;
+}
+
+ 
+
+.add-product-form{
+   z-index: 1;
+   max-width: 50rem;
+   background-color:#eee;
+   border-radius: .5rem;
+   padding:2rem;
+   margin:0 auto;
+   margin-top: 2rem;
+}
+
+.add-product-form h3{
+   font-size: 2.5rem;
+   margin-bottom: 1rem;
+   color:#333;
+   font-family: 'Eingrantch Mono';
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.add-product-form .box{
+   text-transform: none;
+   padding:1.2rem 1.4rem;
+   font-size: 1.7rem;
+   color:#333;
+   border-radius: .5rem;
+   background-color:#fff;
+   margin:1rem 0;
+   width: 100%;
+}
+
+.display-product-table table{
+   width: 100%;
+   text-align: center;
+}
+
+.display-product-table table thead th{
+   padding:1.5rem;
+   font-size: 2rem;
+  }
+
+.display-product-table table td{
+   padding:1.5rem;
+   margin-top: 2pc;
+   font-size: 2rem;
+   color:#fff;
+}
+
+
+.display-product-table .empty{
+   margin-bottom: 2rem;
+   color: #fff;
+   text-align: center;
+   font-size: 2rem;
+   padding:1.5rem;
+}
+
+.edit-form-container{
+   position: fixed;
+   top:0; 
+   left:0;
+   z-index: 1100;
+   background-color:rgba(0,0,0,.7);
+   padding:2rem;
+   display: none;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+}
+
+.edit-form-container form{
+   width: 50rem;
+   border-radius: .5rem;
+   background-color:#fff;
+   text-align: center;
+   padding:2rem;
+}
+
+.edit-form-container form .box{
+   width: 100%;
+   background-color:#eee;
+   border-radius: .5rem;
+   margin:1rem 0;
+   font-size: 1.7rem;
+   color: black;
+   padding:1.2rem 1.4rem;
+   text-transform: none;
+}
+
+.products .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 35rem);
+   gap:1.5rem;
+   justify-content: center;
+}
+
+.products .box-container .box{
+   text-align: center;
+   padding:2rem;
+   box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+   border:.1rem solid #999;
+   border-radius: .5rem;
+}
+
+.products .box-container .box img{
+   height: 25rem;
+}
+
+.products .box-container .box h3{
+   margin:1rem 0;
+   font-size: 2.5rem;
+   color:#333;
+}
+
+.products .box-container .box .price{
+   font-size: 2.5rem;
+   color:#333;
+}
+
+
+
+
+.roda-pe {
+   height: 35pc;
+   padding: 3px;
+   padding-bottom: 5pc;
+   display: grid;
+   color: #fff;
+   margin: 2px;
+   width: 100%;
+
+   flex: 1 1 100vw;
+   background-color: #1a1a1a;
+}
+
+.roda-pe .opcoes {
+   display: flex;
+   justify-content: center;
+}
+
+
+
+.roda-pe .opcoes .lista {
+   display: flex;
+   font-size: 20px;
+   font-family: 'Codygoon';
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+
+}
+
+.roda-pe .opcoes .lista a {
+   margin: 1pc;
+   margin-bottom: 2pc;
+   margin-top: 2pc;
+}
+
+.roda-pe .opcoes .lista a:hover {
+   transform: translateY(-5px);
+   transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.roda-pe .logo {
+   margin-left: 42%;
+   margin-top: 4pc;
+   width: 250px;
+}
+
+
+
+.roda-pe .social_media {
+   display: flex;
+   position: relative;
+   align-items: center;
+   margin-left: 38%;
+}
+
+.roda-pe .subtitulo {
+   display: flex;
+   margin-left: 39%;
+   margin-bottom: 2pc;
+   font-size: 15px;
+   text-align: center;
+   font-family: 'Codygoon', sans-serif;
+
+}
+
+.roda-pe .social_media a {
+   position: relative;
+   display: flex;
+   margin-left: 13px;
+   margin-bottom: 10px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   padding: 2px 2px 1px 5px;
+   background-color: #fff;
+   width: 55px;
+   height: 55px;
+   border-radius: 50%;
+   box-shadow: 0 5px 10px rgb(0, 0, 0);
+}
+
+.roda-pe .social_media img {
+   height: 2pc;
+
+}
+
+.roda-pe .social_media #telegram img {
+   margin-right: 5px;
+
+}
+
+.roda-pe .social_media #facebook:hover {
+   transform: scale(1.1);
+   /*
+   background: rgb(255, 255, 255);
+   background: linear-gradient(31deg, rgba(255, 255, 255, 1) 0%, rgba(98, 223, 255, 1) 23%, rgba(0, 172, 255, 1) 44%, rgba(47, 128, 255, 1) 74%, rgba(81, 91, 255, 1) 100%);
+   */
+   background: rgb(64, 167, 255);
+   background: linear-gradient(35deg, rgba(64, 167, 255, 1) 0%, rgba(0, 82, 255, 1) 100%);
+}
+
+.roda-pe .social_media #instagram:hover {
+   transform: scale(1.1);
+   background: rgb(255, 209, 0);
+   background: linear-gradient(23deg, rgba(255, 209, 0, 1) 0%, rgba(255, 136, 0, 1) 22%, rgba(227, 4, 4, 1) 53%, rgba(185, 6, 178, 1) 78%);
+}
+
+.roda-pe .social_media #discord:hover {
+   transform: scale(1.1);
+   background: rgb(87, 81, 255);
+   background: linear-gradient(35deg, rgba(87, 81, 255, 1) 0%, rgba(157, 95, 255, 1) 100%);
+}
+
+.roda-pe .social_media #linkedin:hover {
+   transform: scale(1.1);
+   background: rgb(32, 104, 255);
+   background: linear-gradient(35deg, rgba(32, 104, 255, 1) 0%, rgba(69, 60, 255, 1) 100%);
+}
+
+.roda-pe .social_media #telegram:hover {
+   transform: scale(1.1);
+   background: rgb(64, 187, 255);
+   background: linear-gradient(35deg, rgba(64, 187, 255, 1) 0%, rgba(0, 147, 255, 1) 100%);
+}
+
+/*
+Cores que variam de acordo com a rede social (sombra da imagem)
+*/
+
+.roda-pe .social_media #facebook:hover img {
+   transform: scale(1.1);
+   transition: 0.3s ease, transform 0.3s ease;
+   filter: drop-shadow(3px 3px rgb(5, 98, 144));
+}
+
+.roda-pe .social_media #instagram:hover img {
+   transform: scale(1.1);
+   transition: 0.3s ease, transform 0.3s ease;
+   filter: drop-shadow(3px 3px rgb(95, 32, 32));
+}
+
+
+.roda-pe .social_media #discord:hover img {
+   transform: scale(1.1);
+   transition: 0.3s ease, transform 0.3s ease;
+   filter: drop-shadow(3px 3px rgb(57, 32, 95));
+}
+
+.roda-pe .social_media #linkedin:hover img {
+   transform: scale(1.1);
+   transition: 0.3s ease, transform 0.3s ease;
+   filter: drop-shadow(3px 3px rgb(32, 36, 95));
+}
+
+.roda-pe .social_media #telegram:hover img {
+   transform: scale(1.1);
+   transition: 0.3s ease, transform 0.3s ease;
+   filter: drop-shadow(3px 3px rgb(22, 68, 105));
+}
+
+
+
+.roda-pe #copyright {
+   font-family: 'Codygoon';
+   color: #fff;
+   text-align: center;
+}
+
+
+
+
+/* media queries  */
+
+@media (max-width:1200px){
+
+   .shopping-cart{
+      overflow-x: scroll;
+   }
+
+   .shopping-cart table{
+      width: 120rem;
+   }
+
+   .shopping-cart .heading{
+      text-align: left;
+   }
+
+   .shopping-cart .checkout-btn{
+      text-align: left;
+   }
+
+}
+
+@media (max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+
+}
+
+@media (max-width:768px){
+
+   #menu-btn{
+      display: inline-block;
+      transition: .2s linear;
+   }
+
+   #menu-btn.fa-times{
+      transform: rotate(180deg);
+   }
+
+   .cabecalho .flex .menu{
+      position: absolute;
+      top:99%; left:0; right:0;
+      background-color: red;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      transition: .2s linear;
+   }
+
+   .cabecalhocabecalho .flex .menu.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+   }
+
+   .cabecalho .flex .menu a{
+      margin:2rem;
+      display: block;
+      text-align: center;
+      font-size: 2.5rem;
+   }
+
+   .display-product-table{
+      overflow-x: scroll;
+      
+   }
+
+   .display-product-table table{
+      width: 90rem;
+   }
+
+}
+
+@media (max-width:450px){
+
+   html{
+      font-size: 50%;
+   }
+
+   .heading{
+      font-size: 3rem;
+   }
+
+   .products .box-container{
+      grid-template-columns: 1fr;
+   }
+
+}
